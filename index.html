@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tüpraş Yaşam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- ============ HEADER / HERO ============ -->
+    <header class="hero" aria-label="Tüpraş Yaşam hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
+      <div class="topbar" role="navigation" aria-label="Main">
+        <div class="topbar__inner container">
+          <a class="topbar__brand" href="#">
+            <img class="topbar__brandLogo" alt="Tüpraş Yaşam" src="assets/images/logo-horizontal.png" />
+          </a>
+
+          <nav class="topbar__nav" aria-label="Primary navigation">
+            <a class="topbar__link" href="#">Kurumsal</a>
+            <a class="topbar__link" href="#">Ürünler ve Hizmetler</a>
+            <a class="topbar__link" href="#">Enerjimiz Geleceğe</a>
+            <a class="topbar__link" href="#">Sürdürülebilirlik</a>
+            <a class="topbar__link" href="#">Yatırımcı İlişkileri</a>
+            <a class="topbar__link topbar__link--active" href="#">Tüpraş Yaşam</a>
+            <a class="topbar__link" href="#">Medya Merkezi</a>
+          </nav>
+
+          <div class="topbar__actions">
+            <button class="topbar__action" type="button">EN</button>
+            <button class="topbar__action" type="button" aria-label="Ara">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" stroke="currentColor" stroke-width="2" />
+                <path d="M21 21l-4.4-4.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+          <a class="breadcrumbs__link" href="#">Ana Sayfa</a>
+          <span class="breadcrumbs__sep">/</span>
+          <span class="breadcrumbs__current">Tüpraş Yaşam</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__kicker">Tüpraş'ta hayat</span>
+          İnsanın merkezde olduğu,<br />
+          <span class="hero__titleBrush">birlikte büyüyen</span> bir yaşam.
+        </h1>
+        <p class="hero__lead">
+          Türkiye'nin en büyük sanayi şirketi Tüpraş; kariyer fırsatlarından gelişim olanaklarına,
+          esnek yan faydalardan sosyal yaşama kadar insan odaklı, çevik ve dijital bir çalışan
+          deneyimi sunar.
+        </p>
+        <div class="hero__ctaRow">
+          <a class="btn btn--primary" href="#calisma">Yaşamı Keşfet</a>
+          <a class="btn btn--ghost" href="#gelisim">Tüpraş Akademi</a>
+        </div>
+        <a class="hero__scroll" href="#about" aria-label="Aşağı kaydır">
+          <span class="hero__scrollLine"></span>
+          <span class="hero__scrollLabel">Keşfet</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section section--about" aria-label="Tüpraş Yaşam Hakkında">
+        <div class="container about">
+          <div class="about__text">
+            <span class="eyebrow eyebrow--green">Tüpraş Yaşam</span>
+            <h2 class="section__title section__title--brush">
+              Yaşamın tüm boyutlarını <br /><em>bir arada</em> düşünüyoruz.
+            </h2>
+            <p class="about__lead">
+              İstanbul'daki Genel Müdürlüğümüz; İzmit, İzmir, Kırıkkale ve Batman'daki Rafinerilerimiz
+              ile Londra Trading ofislerimizde çalışma arkadaşlarımıza bütüncül bir deneyim sunuyoruz.
+            </p>
+            <p class="about__body">
+              Tüpraş Yaşam; <strong>mesleki, sosyal, mental, fiziksel</strong> ve <strong>finansal</strong>
+              boyutlarda tasarlanmış programlar, yan faydalar ve topluluklar ile çalışanlarımızı ve
+              ailelerini merkeze alır.
+            </p>
+            <ul class="about__stats">
+              <li><span class="about__statValue">5</span><span class="about__statLabel">Boyut</span></li>
+              <li><span class="about__statValue">20+</span><span class="about__statLabel">Spor Branşı</span></li>
+              <li><span class="about__statValue">1.000+</span><span class="about__statLabel">Gönüllü</span></li>
+            </ul>
+          </div>
+          <div class="about__media">
+            <div class="about__mediaGlow" aria-hidden="true"></div>
+            <img class="about__atom" src="assets/images/atom.png" alt="Tüpraş Yaşam bütüncül yapı" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PILLARS NAV ============ -->
+      <section class="section section--pillars" aria-label="Üç Temel Alan">
+        <div class="container">
+          <div class="pillars">
+            <a class="pillar pillar--work" href="#calisma">
+              <span class="pillar__num">01</span>
+              <span class="pillar__title">Tüpraş'ta Çalışma</span>
+              <span class="pillar__arrow">→</span>
+            </a>
+            <a class="pillar pillar--social" href="#sosyal">
+              <span class="pillar__num">02</span>
+              <span class="pillar__title">Tüpraş'ta Sosyal Hayat</span>
+              <span class="pillar__arrow">→</span>
+            </a>
+            <a class="pillar pillar--growth" href="#gelisim">
+              <span class="pillar__num">03</span>
+              <span class="pillar__title">Tüpraş'ta Gelişim</span>
+              <span class="pillar__arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 1. TÜPRAŞ'TA ÇALIŞMA ============ -->
+      <section id="calisma" class="section section--pillar pillarSection--work" aria-label="Tüpraş'ta Çalışma">
+        <div class="container">
+          <div class="pillarHead">
+            <span class="eyebrow eyebrow--blue">01 · Tüpraş'ta Çalışma</span>
+            <h2 class="section__title section__title--brush">
+              İnsan odaklı, çevik ve<br /><em>dijital bir çalışan deneyimi.</em>
+            </h2>
+          </div>
+
+          <div class="cardGrid cardGrid--3">
+            <article class="featureCard featureCard--work">
+              <div class="featureCard__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 22c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                </svg>
+              </div>
+              <h3 class="featureCard__title">Tüpraşlı Olmak</h3>
+              <p class="featureCard__text">
+                Türkiye'nin en büyük sanayi şirketi Tüpraş; kariyer fırsatlarından yan faydalara kadar
+                insan odaklı, çevik ve dijital bir çalışan deneyimi sunar. Açık pozisyonlar Koç Kariyerim
+                ve LinkedIn ilanlar sayfalarında.
+              </p>
+              <div class="featureCard__locations">
+                <span>İstanbul</span><span>İzmit</span><span>İzmir</span><span>Kırıkkale</span><span>Batman</span><span>Londra</span>
+              </div>
+              <a class="featureCard__link" href="#">Koç Kariyerim →</a>
+            </article>
+
+            <article class="featureCard featureCard--work">
+              <div class="featureCard__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21V9l9-6 9 6v12" />
+                  <path d="M9 21v-6h6v6" />
+                </svg>
+              </div>
+              <h3 class="featureCard__title">Tüpraş'ta Çalışma Ortamı</h3>
+              <p class="featureCard__text">
+                Koç Topluluğu <strong>Fark Yaratan İş Yerleri</strong> Ödüllü Tüpraş Kampüslerinde;
+                sosyal tesisler, spor salonları, lojmanlar, kafeler ve mola alanları ile birlikte
+                vakit geçirme, sosyalleşme ve dinlenme imkânı sunuyoruz.
+              </p>
+              <a class="featureCard__link" href="#">Kampüsleri Keşfet →</a>
+            </article>
+
+            <article class="featureCard featureCard--work">
+              <div class="featureCard__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3 7h7l-5.6 4.3L18 21l-6-4-6 4 1.6-7.7L2 9h7z" />
+                </svg>
+              </div>
+              <h3 class="featureCard__title">Tüpraş'ta Genç Yetenekler</h3>
+              <p class="featureCard__text">
+                Tüpraş <strong>Nextremers</strong>; geleceğin Tüpraşlılarına özel tasarlanmış
+                bütüncül bir iş deneyimidir. 3–4. sınıf öğrencileri, yüksek lisans öğrencileri ve
+                yeni mezun genç yetenekler için gerçek projeler, uluslararası eğitimler ve topluluklar.
+              </p>
+              <ul class="featureCard__bullets">
+                <li>Profesyonel çalışma hayatı deneyimi</li>
+                <li>Uluslararası gelişim programları</li>
+                <li>Spor, gönüllülük, sosyal kulüpler</li>
+              </ul>
+              <a class="featureCard__link" href="#">Nextremers Programı →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. TÜPRAŞ'TA SOSYAL HAYAT ============ -->
+      <section id="sosyal" class="section section--pillar pillarSection--social" aria-label="Tüpraş'ta Sosyal Hayat">
+        <div class="container">
+          <div class="pillarHead pillarHead--light">
+            <span class="eyebrow eyebrow--orange">02 · Tüpraş'ta Sosyal Hayat</span>
+            <h2 class="section__title section__title--brush">
+              Birlikte oynamak,<br /><em>birlikte iyileşmek.</em>
+            </h2>
+            <p class="pillarHead__lead">
+              Spor takımlarından gönüllülüğe, sosyal etkinlik kulüplerinden kültürel gezilere; çalışma
+              arkadaşlarımız ve aileleri için zengin bir sosyal yaşam.
+            </p>
+          </div>
+
+          <div class="cardGrid cardGrid--3">
+            <article class="socialCard socialCard--clubs">
+              <div class="socialCard__hero" aria-hidden="true">
+                <span class="socialCard__tag">Kulüpler</span>
+                <div class="socialCard__chips">
+                  <span>Tiyatro</span><span>Dans</span><span>Müzik</span><span>Satranç</span><span>Doğa</span><span>Kültür Gezisi</span>
+                </div>
+              </div>
+              <div class="socialCard__body">
+                <h3 class="socialCard__title">Tüpraş Sosyal Etkinlik Kulüpleri</h3>
+                <p class="socialCard__text">
+                  Tiyatrodan dansa, müzikten kültürel gezilere, satrançtan doğada aktivitelere kadar
+                  çalışma arkadaşlarımıza ve ailelerine bir araya gelme fırsatı sunar.
+                </p>
+              </div>
+            </article>
+
+            <article class="socialCard socialCard--sports">
+              <div class="socialCard__hero socialCard__hero--sports" aria-hidden="true">
+                <span class="socialCard__tag">20+ Branş</span>
+                <div class="socialCard__bigNum">20<sup>+</sup></div>
+                <div class="socialCard__subNum">Spor branşı, antrenman ve turnuva</div>
+              </div>
+              <div class="socialCard__body">
+                <h3 class="socialCard__title">Tüpraş Spor Takımları</h3>
+                <p class="socialCard__text">
+                  20'den fazla branşta yıl boyunca antrenmanlara ve turnuvalara katılır, Koç Topluluğu
+                  Spor Şenliklerinde Tüpraş'ı temsil ederiz.
+                </p>
+                <span class="socialCard__note">🎬 Spor takımları filmi yakında</span>
+              </div>
+            </article>
+
+            <article class="socialCard socialCard--volunteers">
+              <div class="socialCard__hero socialCard__hero--volunteers" aria-hidden="true">
+                <span class="socialCard__tag">Tüpraş Gönüllüleri</span>
+                <div class="socialCard__stat"><strong>5.000+</strong><span>konteyner · Umut Kentler</span></div>
+              </div>
+              <div class="socialCard__body">
+                <h3 class="socialCard__title">Tüpraş Gönüllüleri</h3>
+                <p class="socialCard__text">
+                  Tüpraş ve Koç Gönüllüleri, ihtiyaç olan her yerde birlikte hareket ederek
+                  dayanışmayı güçlendiren gönüllülük programları sunar.
+                </p>
+                <ul class="socialCard__list">
+                  <li><span class="dot dot--orange"></span>Umut Kentler: 5 şehir, 5.000+ konteyner, 1.000+ gönüllü</li>
+                  <li><span class="dot dot--pink"></span>Kadın dernekleriyle dayanışma çalışmaları</li>
+                  <li><span class="dot dot--teal"></span>Doğa ve kıyı temizliği etkinlikleri</li>
+                  <li><span class="dot dot--lime"></span>Hayvan barınakları ziyaretleri</li>
+                  <li><span class="dot dot--blue"></span>Çocuklara hediye ve eğitim desteği</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. TÜPRAŞ'TA GELİŞİM ============ -->
+      <section id="gelisim" class="section section--pillar pillarSection--growth" aria-label="Tüpraş'ta Gelişim">
+        <div class="container">
+          <div class="growth">
+            <div class="growth__text">
+              <span class="eyebrow eyebrow--lime">03 · Tüpraş'ta Gelişim</span>
+              <h2 class="section__title section__title--brush">
+                Global bir öğrenme<br /><em>ekosistemi.</em>
+              </h2>
+              <p class="growth__lead">
+                <strong>Tüpraş Akademi</strong> ve <strong>Koç Akademi</strong> ile teknik, davranışsal
+                ve liderlik gelişimine yönelik global bir ekosistem sunuyoruz. Koç Topluluğu şirketleri
+                genelinde gelişim, kariyer hareketliliği, rotasyon ve takdir olanakları.
+              </p>
+
+              <div class="growth__partners">
+                <span class="growth__partnersLabel">Global iş birlikleri</span>
+                <div class="growth__partnersList">
+                  <span>Harvard</span>
+                  <span>Stanford</span>
+                  <span>MIT</span>
+                  <span>Fraunhofer</span>
+                </div>
+              </div>
+
+              <div class="growth__items">
+                <div class="growthItem">
+                  <div class="growthItem__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="growthItem__title">PLT · Program for Leadership Transition</h4>
+                    <p class="growthItem__text">Kapsamlı liderlik ve yetenek gelişimi programı.</p>
+                  </div>
+                </div>
+                <div class="growthItem">
+                  <div class="growthItem__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="growthItem__title">Global İş Birlikleri</h4>
+                    <p class="growthItem__text">Harvard, Stanford, MIT, Fraunhofer gibi saygın kurumlarla ortak programlar.</p>
+                  </div>
+                </div>
+                <div class="growthItem">
+                  <div class="growthItem__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4-9 4-9-4 9-4z"/><path d="M3 10l9 4 9-4M3 14l9 4 9-4"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="growthItem__title">Mentorluk & Koçluk</h4>
+                    <p class="growthItem__text">Alanında uzman iç ve dış eğitmenlerden mentorluk ve koçluk desteği.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="growth__aside">
+              <div class="academy">
+                <div class="academy__badge">Tüpraş Akademi</div>
+                <div class="academy__visual" aria-hidden="true">
+                  <div class="academy__building"></div>
+                  <div class="academy__glow"></div>
+                </div>
+                <h3 class="academy__title">Akademi Binası</h3>
+                <p class="academy__text">Fiziksel ve dijital kanallarla birlikte öğrenme deneyimi.</p>
+                <div class="academy__filmNote">🎬 Hackathon filmi yakında</div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="section section--cta" aria-label="Başvuru">
+        <div class="container ctaBox">
+          <div class="ctaBox__glow" aria-hidden="true"></div>
+          <div class="ctaBox__content">
+            <h2 class="ctaBox__title">Geleceğin Tüpraşlıları aramızda.</h2>
+            <p class="ctaBox__text">
+              Açık pozisyonları incele, Tüpraş Yaşam'ın bir parçası ol.
+            </p>
+          </div>
+          <div class="ctaBox__actions">
+            <a class="btn btn--primary" href="#">Koç Kariyerim</a>
+            <a class="btn btn--ghost" href="#">LinkedIn İlanlar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer__inner">
+        <img class="footer__logo" alt="Tüpraş Yaşam" src="assets/images/logo-horizontal.png" />
+        <div class="footer__cols">
+          <div>
+            <h5>Tüpraş Yaşam</h5>
+            <a href="#calisma">Çalışma</a>
+            <a href="#sosyal">Sosyal Hayat</a>
+            <a href="#gelisim">Gelişim</a>
+          </div>
+          <div>
+            <h5>Kurumsal</h5>
+            <a href="#">Hakkımızda</a>
+            <a href="#">Sürdürülebilirlik</a>
+            <a href="#">Medya Merkezi</a>
+          </div>
+          <div>
+            <h5>Takip Et</h5>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__legal container">© Tüpraş. Tüm hakları saklıdır.</div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
