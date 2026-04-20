@@ -25,7 +25,7 @@
     { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
   );
   document
-    .querySelectorAll(".featureCard, .socialCard, .pillar, .growthItem, .about, .ctaBox")
+    .querySelectorAll(".featureCard, .socialCard, .pillar, .pillar5, .splitRow, .growthItem, .about, .ctaBox")
     .forEach((el) => {
       el.classList.add("reveal");
       observer.observe(el);
