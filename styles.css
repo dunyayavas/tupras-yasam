@@ -66,7 +66,7 @@ img { max-width: 100%; display: block; }
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-family: "Pinyon Script", "Roboto", cursive;
+  font-family: "Playlist Script", "Roboto", cursive;
   font-weight: 400;
   font-size: 1.45em;
   letter-spacing: 0;
@@ -233,7 +233,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: -1.5px;
 }
 .hero__titleBrush {
-  font-family: "Pinyon Script", cursive;
+  font-family: "Playlist Script", cursive;
   font-weight: 400;
   font-size: 1.35em;
   background: linear-gradient(90deg, #8eff6e, #4fd3d6, #7fb8ff);
@@ -521,7 +521,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   bottom: 20%; left: 32px; right: 32px;
   z-index: 2;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Playlist Script", cursive;
   font-weight: 400;
   font-size: clamp(84px, 10vw, 140px);
   line-height: 0.9;
@@ -546,7 +546,7 @@ img { max-width: 100%; display: block; }
 }
 .scene__bigword--alt em {
   display: inline;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Playlist Script", cursive;
   font-weight: 400;
   font-size: 1.15em;
   letter-spacing: -2px;
@@ -1137,7 +1137,7 @@ img { max-width: 100%; display: block; }
 }
 .hackathon__title em {
   font-style: normal;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Playlist Script", cursive;
   font-weight: 400;
   font-size: 1.4em;
   background: linear-gradient(90deg, #8eff6e, #4fd3d6);
@@ -1173,7 +1173,7 @@ img { max-width: 100%; display: block; }
 }
 .growthCard__num {
   display: inline-block;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Playlist Script", cursive;
   font-weight: 400;
   font-size: 42px; line-height: 1;
   background: linear-gradient(90deg, #8eff6e, #4fd3d6);
@@ -1215,7 +1215,7 @@ img { max-width: 100%; display: block; }
 }
 .partners__title em {
   font-style: normal;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Playlist Script", cursive;
   font-weight: 400;
   font-size: 1.4em;
   background: linear-gradient(90deg, #8eff6e, #4fd3d6);
@@ -1412,6 +1412,15 @@ img { max-width: 100%; display: block; }
 /* ============ REVEAL ANIMATIONS ============ */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* ============ CUSTOM FONT ============ */
+@font-face {
+  font-family: "Playlist Script";
+  src: url("./assets/Playlist Script.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1100px) {
