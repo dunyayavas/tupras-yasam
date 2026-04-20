@@ -1106,17 +1106,60 @@ img { max-width: 100%; display: block; }
   color: var(--muted);
 }
 
-/* ============ HACKATHON VIDEO ============ */
-.hackathon {
-  margin-top: 40px;
-  margin-bottom: 80px;
+/* ============ GROWTH LAYOUT (left text · right video) ============ */
+.growthLayout {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 72px;
+  align-items: start;
 }
-.hackathon__header {
-  display: flex; flex-direction: column; align-items: flex-start; gap: 10px;
+.growthLayout__text { max-width: 620px; color: var(--text); }
+.growthLayout__lead {
+  margin: 18px 0 32px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
 }
+.growthLayout__lead strong { color: var(--text); font-weight: 700; }
+
+/* Growth cards inside light section → dark on light */
+.growthLayout__text .growthCard {
+  background: #fff;
+  border-color: var(--border);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+}
+.growthLayout__text .growthCard:hover {
+  background: #fff;
+  border-color: rgba(69, 194, 51, 0.5);
+}
+.growthLayout__text .growthCard__text { color: var(--muted); }
+.growthLayout__text .growthCard__num {
+  background: var(--grad-y);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* Partners eyebrow on light bg */
+.growthLayout__text .partners__eyebrow {
+  color: var(--y-dark);
+  background: rgba(0, 98, 161, 0.08);
+  border-color: rgba(0, 98, 161, 0.2);
+}
+.growthLayout__media {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+.mediaFrame--video {
+  aspect-ratio: 16 / 9;
+  min-height: auto;
+  width: 100%;
+}
+
+/* Legacy hackathon block kept for the eyebrow/title reused in the aside */
 .hackathon__eyebrow {
   display: inline-flex; align-items: center;
   padding: 6px 14px;
@@ -1155,8 +1198,13 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
+.growthList--stacked { grid-template-columns: 1fr; gap: 12px; margin-bottom: 40px; }
+.growthList--stacked .growthCard { padding: 20px 22px; display: grid; grid-template-columns: auto 1fr; column-gap: 20px; align-items: start; }
+.growthList--stacked .growthCard__num { margin-bottom: 0; font-size: 38px; grid-row: span 2; align-self: center; }
+.growthList--stacked .growthCard__title { margin-bottom: 4px; font-size: 16px; }
+.growthList--stacked .growthCard__text { font-size: 13.5px; }
 .growthCard {
   position: relative;
   padding: 28px 24px;
@@ -1195,6 +1243,29 @@ img { max-width: 100%; display: block; }
 
 /* ============ PARTNER TILES ============ */
 .partners { margin-top: 20px; }
+.partners--compact { margin-top: 8px; }
+.partners--compact .partners__eyebrow { margin-bottom: 16px; }
+.partners--compact .partners__grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.partners--compact .partnerTile { padding: 14px 10px; border-radius: 12px; gap: 2px; }
+.partners--compact .partnerTile__name { font-size: 12px; letter-spacing: 0.5px; }
+.partners--compact .partnerTile__nameLg { font-size: 13px; }
+.partners--compact .partnerTile__sub { font-size: 8px; letter-spacing: 2px; }
+.partners--compact .partnerTile__tiny { font-size: 8px; }
+.partners--compact .partnerTile__serifRed,
+.partners--compact .partnerTile__serif { font-size: 12px; letter-spacing: 0.5px; }
+.partners--compact .partnerTile__mono { font-size: 18px; }
+.partners--compact .partnerTile__divider { height: 20px; }
+.partners--compact .partnerTile__sans { font-size: 13px; }
+.partners--compact .partnerTile__columbia { font-size: 10px; gap: 3px; }
+.partners--compact .partnerTile__columbiaMark { font-size: 13px; }
+.partners--compact .partnerTile__subRule { font-size: 7px; letter-spacing: 2px; }
+.partners--compact .partnerTile__koc { font-size: 15px; }
+.partners--compact .partnerTile__kocSub { font-size: 8px; letter-spacing: 1.5px; }
+.partners--compact .partnerTile__kocMark svg { width: 20px; height: 20px; }
+.partners--compact .partnerTile__texas { font-size: 11px; }
+.partners--compact .partnerTile__kellogg { font-size: 12px; gap: 4px; }
+.partners--compact .partnerTile__mext { font-size: 24px; letter-spacing: -1px; }
+.partners--compact .partnerTile__crest svg { width: 20px; height: 20px; }
 .partners__head { text-align: center; margin-bottom: 36px; }
 .partners__eyebrow {
   display: inline-block;
@@ -1444,6 +1515,10 @@ img { max-width: 100%; display: block; }
   .growthList { grid-template-columns: 1fr; }
   .partners__grid { grid-template-columns: repeat(3, 1fr); }
   .mediaFrame { min-height: 300px; }
+  .growthLayout { grid-template-columns: 1fr; gap: 48px; }
+  .growthLayout__text { max-width: none; }
+  .growthLayout__media { position: static; }
+  .partners--compact .partners__grid { grid-template-columns: repeat(5, 1fr); }
 }
 @media (max-width: 720px) {
   .pillars5 { grid-template-columns: repeat(2, 1fr); }
