@@ -270,11 +270,11 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: start;
 }
-.about__text { max-width: 560px; }
+.about__text { max-width: 560px; min-height: 560px; }
 .about__lead { font-size: 19px; color: var(--text); margin: 0 0 18px; line-height: 1.6; }
-.about__body { font-size: 16px; color: var(--muted); margin: 0 0 32px; }
+.about__body { font-size: 16px; color: var(--muted); margin: 0 0 32px; min-height: 120px; }
 .about__stats {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 16px; padding: 0; margin: 0;
@@ -291,7 +291,12 @@ img { max-width: 100%; display: block; }
 }
 .about__statLabel { font-size: 13px; color: var(--muted); font-weight: 500; }
 
-.about__media { position: relative; display: flex; justify-content: center; }
+.about__media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+}
 .about__mediaGlow {
   position: absolute; inset: 0;
   background:
@@ -299,7 +304,78 @@ img { max-width: 100%; display: block; }
     radial-gradient(circle at 70% 70%, rgba(0, 98, 161, 0.22), transparent 60%);
   filter: blur(30px);
 }
-.about__atom { position: relative; width: 100%; max-width: 560px; }
+.about__system {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  min-height: 500px;
+}
+.about__systemBadge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 30, 50, 0.08);
+  color: var(--y-dark);
+  box-shadow: var(--shadow-sm);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(8px);
+}
+.about__systemCanvas {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.about__systemCanvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.about__systemOverlay,
+.about__systemLabels {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+.about__systemCenterLogo {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+}
+.about__systemCenterLogoImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 110px;
+  height: auto;
+  transform: translate(-50%, -38%);
+}
+.about__systemNodeLabel {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(10, 30, 60, 0.2);
+}
 
 /* ============ PILLARS (5 boyut) ============ */
 .section--pillars { padding: 40px 0 120px; background: var(--bg); }
@@ -1503,6 +1579,14 @@ img { max-width: 100%; display: block; }
   .topbar__inner { grid-template-columns: 1fr auto; }
   .cardGrid--3 { grid-template-columns: 1fr 1fr; }
   .about { grid-template-columns: 1fr; gap: 48px; }
+  .about__text { min-height: auto; }
+  .about__body { min-height: 0; }
+  .about__media { min-height: 440px; }
+  .about__system { max-width: none; min-height: 440px; }
+  .about__systemCanvas { height: 440px; }
+  .about__systemCenterLogo { width: 116px; height: 116px; }
+  .about__systemCenterLogoImage { width: 102px; }
+  .about__systemNodeLabel { font-size: 14px; }
   .growth { grid-template-columns: 1fr; }
   .growth__aside { position: static; }
   .ctaBox { grid-template-columns: 1fr; padding: 36px; }
@@ -1529,6 +1613,19 @@ img { max-width: 100%; display: block; }
   .cardGrid--3 { grid-template-columns: 1fr; }
   .pillars5 { grid-template-columns: 1fr; }
   .about__stats--2 { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .about__media { min-height: 360px; }
+  .about__system { min-height: 360px; }
+  .about__systemBadge {
+    top: 10px;
+    left: 10px;
+    min-height: 32px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+  .about__systemCanvas { height: 360px; }
+  .about__systemCenterLogo { width: 98px; height: 98px; }
+  .about__systemCenterLogoImage { width: 88px; }
+  .about__systemNodeLabel { font-size: 13px; }
   .ctaBox { padding: 28px; }
   .footer__cols { grid-template-columns: 1fr 1fr; }
   .hero__content { padding-top: 48px; padding-bottom: 80px; }
