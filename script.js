@@ -1,5 +1,14 @@
 // Smooth scroll + scroll reveal for Tüpraş Yaşam
 (function () {
+  const feedbackStylesId = "feedback-news-css";
+  if (!document.getElementById(feedbackStylesId)) {
+    const link = document.createElement("link");
+    link.id = feedbackStylesId;
+    link.rel = "stylesheet";
+    link.href = "./feedback-news.css";
+    document.head.appendChild(link);
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
       const id = a.getAttribute("href");
