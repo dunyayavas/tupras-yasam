@@ -1,0 +1,36 @@
+/* ============ FEEDBACK NEWS DEPLOY FALLBACK ============ */
+.section.section--feedbackNews {
+  padding: 88px 0 112px;
+  background:
+    linear-gradient(135deg, rgba(69,194,51,0.08), rgba(0,176,180,0.08) 45%, rgba(0,98,161,0.08)),
+    var(--bg-soft);
+  border-top: 1px solid var(--border);
+}
+
+.feedbackNews {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: center;
+}
+
+.feedbackNews__title {
+  max-width: 720px;
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: 0;
+  color: var(--text);
+}
+
+@media (max-width: 1024px) {
+  .feedbackNews { grid-template-columns: 1fr; }
+  .feedbackNews__button { justify-self: flex-start; }
+}
+
+@media (max-width: 640px) {
+  .section.section--feedbackNews { padding: 64px 0 72px; }
+  .feedbackNews__title { font-size: 30px; }
+}
