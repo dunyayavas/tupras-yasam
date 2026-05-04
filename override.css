@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Playlist Script";
+  src:
+    local("Playlist Script"),
+    local("PlaylistScript"),
+    url("./assets/Playlist%20Script.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.hero__titleBrush,
+.section__title em,
+.scene__bigword,
+.scene__bigword--alt em,
+.growthCard__num,
+.partners__title em,
+.hackathon__title em {
+  font-family: "Playlist Script", cursive;
+}
+
+.pillarHead__lead,
+.growthLayout__lead,
+.splitRow__text p,
+.splitRow__bullets li {
+  letter-spacing: 0;
+}
+
+@media (max-width: 1024px) {
+  .growthLayout > * {
+    min-width: 0;
+  }
+
+  .partners--compact .partners__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero__content {
+    min-height: calc(720px - 88px);
+    padding-top: 48px;
+    padding-bottom: 92px;
+  }
+
+  .hero__title {
+    font-size: 58px;
+    line-height: 0.96;
+    margin-bottom: 24px;
+  }
+
+  .hero__titleBrush {
+    display: block;
+    font-size: 1.42em;
+    line-height: 0.9;
+    margin-top: 6px;
+  }
+
+  .hero__lead {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 34px;
+  }
+
+  .hero__ctaRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .hero__scrollLine {
+    display: none;
+  }
+
+  .section--about {
+    padding: 72px 0;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about__text {
+    display: contents;
+  }
+
+  .about__text .section__title {
+    order: 1;
+  }
+
+  .about__lead {
+    order: 2;
+  }
+
+  .about__media {
+    order: 3;
+    margin: 4px 0 8px;
+  }
+
+  .about__body {
+    order: 4;
+  }
+
+  .about__stats {
+    order: 5;
+  }
+
+  .growthList--stacked .growthCard {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .growthList--stacked .growthCard__num {
+    grid-row: auto;
+    align-self: start;
+  }
+
+  .partners--compact .partners__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partners--compact .partnerTile {
+    min-width: 0;
+    padding: 12px 8px;
+  }
+}
