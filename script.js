@@ -1,14 +1,5 @@
 // Smooth scroll + scroll reveal for Tüpraş Yaşam
 (function () {
-  const feedbackStylesId = "feedback-news-css";
-  if (!document.getElementById(feedbackStylesId)) {
-    const link = document.createElement("link");
-    link.id = feedbackStylesId;
-    link.rel = "stylesheet";
-    link.href = "./feedback-news.css";
-    document.head.appendChild(link);
-  }
-
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
       const id = a.getAttribute("href");
@@ -34,7 +25,7 @@
     { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
   );
   document
-    .querySelectorAll(".featureCard, .socialCard, .pillar, .pillar5, .splitRow, .growthItem, .growthCard, .partnerTile, .hackathon, .about, .ctaBox, .feedbackNews")
+    .querySelectorAll(".featureCard, .socialCard, .pillar, .pillar5, .splitRow, .growthItem, .growthCard, .partnerTile, .hackathon, .about, .ctaBox")
     .forEach((el) => {
       el.classList.add("reveal");
       observer.observe(el);
